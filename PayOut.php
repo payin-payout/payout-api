@@ -12,8 +12,9 @@ class PayOut {
 	const CURRENCY_USD = 840;
 	const CURRENCY_ALL = 'ALL';
 
-	private $alg = 'md5';
-	private $point = '';
+	protected $alg = 'md5';
+    protected $point = '';
+    protected $keyPath;
 
 	public $requestUrl = 'https://lk.payin-payout.net/api_out/';
 
@@ -21,6 +22,7 @@ class PayOut {
 		if(is_numeric($point)){
 			$this->setPoint($point);
 		}
+		$this->keyPath = __DIR__ .'/keys/secret.key';
 	}
 
 	/**
@@ -71,14 +73,23 @@ class PayOut {
 		return $this->point;
 	}
 
+    /**
+     * Переопределить путь до ключа шифрования
+     * @param string $keyPath
+     */
+	public function setKeyPath($keyPath)
+    {
+        $this->keyPath = $keyPath;
+    }
+
 	/**
 	 * путь до ключа шифравания
 	 * @throws Exception
 	 * @return string
 	 */
 	public function getKeyPath(){
-		if(file_exists(dirname(__FILE__).'/keys/secret.key')){
-			return dirname(__FILE__).'/keys/secret.key';
+		if(file_exists($this->keyPath)){
+			return $this->keyPath;
 		}
 		throw new Exception('Secret key not found');
 	}
