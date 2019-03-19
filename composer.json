@@ -1,14 +1,13 @@
 {
-  "name": "freematiq/payout-api",
+  "name": "payin-payout/payout-api",
+  "description": "Library for payout api",
   "type": "library",
-  "authors": [
-    {
-      "name": "Gregory Manuylov"
-    }
-  ],
   "autoload": {
     "psr-4": {
-      "Freematiq\\": ""
+      "PayinPayout\\": ""
     }
+  },
+  "require": {
+    "ext-simplexml": "*"
   }
 }
