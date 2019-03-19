@@ -24,7 +24,7 @@
 ### Установка ###
 
 ```bash
-composer require payin-payout/payout-api
+composer require payin-payout/payout-api ^2.0
 ```
 
 [Документация](docs/README.md)

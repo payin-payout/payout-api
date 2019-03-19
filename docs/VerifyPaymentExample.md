@@ -3,9 +3,10 @@
 ```php
 <?php
 
-use Freematiq\PayOut;
+use PayinPayout\PayOut;
 
 $gate = new PayOut();
+$gate->setKeyPath('/path/secret.key');
 
 /*
  * Необходимо прописать идентификатор пользователя, обязательно в кавычках. 
