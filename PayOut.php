@@ -1,14 +1,6 @@
 <?php
-/**
- * Класс для работы с шлюзом PayOut
- *
- * @author Gregory Manuylov
- *
- * Date: 09.04.14
- * Time: 12:14
- */
 
-namespace Freematiq;
+namespace PayinPayout;
 
 use \Exception;
 use \SimpleXMLElement;
