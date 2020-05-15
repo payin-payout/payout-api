@@ -33,4 +33,6 @@ composer require payin-payout/payout-api ^2.2
 
 [Информация о использовании сервисов](docs/services.md)
 
+[Использование тестового стенда](docs/dev1.md)
+
 Успехов!
