@@ -11,3 +11,12 @@
 
 По поводу зачисления тестовых средств можно обратиться к менеджеру, либо произвести 
 [тестовое зачисление средств](https://github.com/payin-payout/payin-api/blob/master/testing.md). 
+
+## Для тестовых оплат доступны сервисы
+
+* Мегафон
+* МТС
+* VISA/MASTERCARD/MAESTRO по номеру карты (3) 
+* Qiwi кошелек
+* Webmoney (WMR)
+* YandexMoney
